@@ -1,0 +1,8 @@
+---
+# Coffee Servers Base Playbook
+
+- hosts: coffee_servers
+  user: coffee
+  roles: 
+    - role: common
+  
