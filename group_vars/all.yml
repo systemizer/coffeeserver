@@ -1,0 +1,10 @@
+---
+caffeine_groups:
+  - name: roaster
+caffeine_users:
+  - name: systemizer
+    shell: /bin/bash
+    groups: roaster
+  - name: jeff
+    shell: /bin/bash
+    groups: roaster

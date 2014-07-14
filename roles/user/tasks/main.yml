@@ -1,5 +1,14 @@
 ---
+- name: Caffeine Users | Manage Groups
+  action: group
+  args: "{{ item }}"
+  with_items: caffeine_groups
+
 - name: Caffeine Users | Manage Users
   action: user
   args: "{{ item }}"
-  with_items: users 
+  with_items: caffeine_users 
+
+- name: Caffeine Users | Install Authorized SSH Keys
+  authorized_key: user="{{item.name}}" key="{{ lookup('file', '../../../files/users/' + item.name + '.pub') }}"
+  with_items: caffeine_users
