@@ -1,0 +1,9 @@
+---
+caffeine.users:
+  author: systemizer
+  description: Manages operating system users and permissions
+  company: coffeehaus
+  license: MIT
+  min_ansible_version: 1.4
+dependencies: []  
+  

@@ -1,7 +1,7 @@
 ---
 # Coffee Servers Base Playbook
 
-- hosts: coffee_servers
+- hosts: all
   user: coffee
   roles: 
     - role: common

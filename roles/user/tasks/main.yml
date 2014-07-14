@@ -1,0 +1,5 @@
+---
+- name: Caffeine Users | Manage Users
+  action: user
+  args: "{{ item }}"
+  with_items: users 
